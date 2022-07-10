@@ -64,4 +64,9 @@ require("nvim-tree").setup({
     dotfiles = true,
     custom = { '.mvn', '.settings', '.classpath', '.factorypath', '.project' },
   },
+  actions = {
+      open_file = {
+          quit_on_open = true
+      }
+  },
 })
