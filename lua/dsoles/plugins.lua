@@ -40,8 +40,8 @@ return require('packer').startup(function(use)
     -- Snippets
     use 'L3MON4D3/LuaSnip'
 
-    -- Barbar
-    use 'romgrk/barbar.nvim'
+    -- Bufferline
+    use 'akinsho/bufferline.nvim'
 
     -- Autopairs
     use 'windwp/nvim-autopairs'
