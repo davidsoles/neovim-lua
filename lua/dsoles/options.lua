@@ -10,7 +10,7 @@ vim.opt.mouse = "a"
 vim.opt.number = true
 vim.opt.scrolloff = 4
 vim.opt.shiftwidth = 4
-vim.opt.shortmess:append "c"
+vim.opt.shortmess:append "I"
 vim.opt.signcolumn = "yes"
 vim.opt.smartindent = true
 vim.opt.softtabstop = 4

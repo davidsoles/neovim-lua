@@ -36,3 +36,9 @@ keymap("n", "<leader>b", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", opts)
 keymap("n", "<F6>", "<cmd>lua require'dap'.step_over()<CR>", opts)
 keymap("n", "<F7>", "<cmd>lua require'dap'.step_into()<CR>", opts)
 keymap("n", "<F8>", "<cmd>lua require'dap'.continue()<CR>", opts)
+
+-- Barbar
+keymap("n", "<S-Tab>", ":BufferPrevious<CR>", opts)
+keymap("n", "<Tab>", ":BufferNext<CR>", opts)
+keymap("n", "q", ":BufferClose<CR>", opts)
+keymap("n", "Q", ":BufferClose!<CR>", opts)
