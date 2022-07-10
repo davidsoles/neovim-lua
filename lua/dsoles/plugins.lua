@@ -6,6 +6,7 @@ return require('packer').startup(function(use)
     use 'matsuuu/pinkmare'
     use 'lunarvim/onedarker.nvim'
     use 'gruvbox-community/gruvbox'
+    use 'Mofiqul/vscode.nvim'
     
     -- Treesitter
     use 'nvim-treesitter/nvim-treesitter'
