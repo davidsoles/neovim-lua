@@ -40,12 +40,12 @@ keymap("n", "<F8>", "<cmd>lua require'dap'.continue()<CR>", opts)
 -- Bufferline
 keymap("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", opts)
 keymap("n", "<Tab>", ":BufferLineCycleNext<CR>", opts)
-keymap("n", "q", ":bdelete<CR>", opts)
-keymap("n", "Q", ":bdelete!<CR>", opts)
+keymap("n", "<leader>q", ":bdelete<CR>", opts)
+keymap("n", "<leader>Q", ":bdelete!<CR>", opts)
 
 -- Terminal
 keymap("n", "<leader>t", ":ToggleTerm<CR>", opts)
-keymap("t", "<esc>", "<C-\\><C-n>", opts)
+keymap("t", "<leader><esc>", "<C-\\><C-n>", opts)
 
 -- Terminal with Lazygit
 local Terminal  = require('toggleterm.terminal').Terminal
@@ -76,4 +76,4 @@ function _lazygit_toggle()
   lazygit:toggle()
 end
 
-vim.api.nvim_set_keymap("n", "<leader>g", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>gg", "<cmd>lua _lazygit_toggle()<CR>", {noremap = true, silent = true})
