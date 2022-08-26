@@ -5,7 +5,7 @@ local workspace_dir = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
 
 local config = {
     cmd = {
-        os.getenv('HOME') .. '/.sdkman/candidates/java/17.0.3-tem/bin/java',
+        os.getenv('HOME') .. '/.sdkman/candidates/java/17.0.4-tem/bin/java',
         '-Declipse.application=org.eclipse.jdt.ls.core.id1',
         '-Dosgi.bundles.defaultStartLevel=4',
         '-Declipse.product=org.eclipse.jdt.ls.core.product',
@@ -44,16 +44,16 @@ local config = {
                 runtimes = {
                     {
                         name = 'JavaSE-1.8',
-                        path = os.getenv('HOME') .. '/.sdkman/candidates/java/8.0.332-tem'
+                        path = os.getenv('HOME') .. '/.sdkman/candidates/java/8.0.345-tem'
                     },
                     {
                         name = 'JavaSE-11',
-                        path = os.getenv('HOME') .. '/.sdkman/candidates/java/11.0.15-tem',
+                        path = os.getenv('HOME') .. '/.sdkman/candidates/java/11.0.16-tem',
                         default = true
                     },
                     {
                         name = 'JavaSE-17',
-                        path = os.getenv('HOME') .. '/.sdkman/candidates/java/17.0.3-tem'
+                        path = os.getenv('HOME') .. '/.sdkman/candidates/java/17.0.4-tem'
                     }
                 }
             }
